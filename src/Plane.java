@@ -3,6 +3,7 @@ import java.util.ArrayList;
 public class Plane {
     private int planenumber; 
     private ArrayList<Passenger> passengerlist = new ArrayList();
+    private ArrayList<Bag> cargolist = new ArrayList();
 
 
     public Plane(int planenumber){
@@ -20,6 +21,13 @@ public class Plane {
         return this.passengerlist;
     }
     
+    public void LoadBag(Bag bag){
+        cargolist.add(bag);
+
+    }
+    public ArrayList<Bag> GetCargo(){
+        return this.cargolist;
+    }
 
 }
 

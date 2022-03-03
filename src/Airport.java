@@ -11,7 +11,7 @@ public class Airport {
     public String getAirport(){
         return this.airport;
     }
-    public void inboundplane(Plane plane) {
+    public void landplane(Plane plane) {
         planelist.add(plane);
     }
     public ArrayList<Plane> getPlanes() {
@@ -23,6 +23,7 @@ public class Airport {
         plane.BoardPassenger(passenger);
         planelist.add(plane);
         passenger.setPassengerBag(bag);
+        plane.LoadBag(bag);
     }
     
     

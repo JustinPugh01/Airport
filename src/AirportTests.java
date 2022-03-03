@@ -13,7 +13,7 @@ public class AirportTests {
         BoardingPass pass = new BoardingPass("R4,S3");
         passenger.setBoardingPass(pass);
         plane.BoardPassenger(passenger);
-        airport.inboundplane(plane);
+        airport.landplane(plane);
         boolean isInAirport = (airport.getPlanes().contains(plane))&&(plane.getPassenger().contains(passenger));
         assertEquals(isInAirport, true);
         
@@ -29,7 +29,9 @@ public class AirportTests {
         assertSame(passenger.getpassengerBoardingPass(), pass);
         assertSame(passenger.getPassengerBag(), bag);
         boolean isInAirport2 = (airport.getPlanes().contains(plane))&&(plane.getPassenger().contains(passenger));
+        boolean isBagOnPlane = (plane.GetCargo().contains(bag));
         assertEquals(isInAirport2, true);
+        assertEquals(isBagOnPlane, true);
 
 
     }

@@ -8,15 +8,15 @@ public class PlaneTests {
     public void testPlane(){
         Plane plane = new Plane(2341);
         assertEquals(plane.getPlaneNumber(),2341);
-
     } 
 
     @Test 
-    public void testaarival(){
+    public void testboarding(){
         Plane plane = new Plane(541);
         Passenger passenger = new Passenger("Scully");
-        passenger.setSeatNumber("R45,S2");
-        plane.checkInPassenger(passenger);
+        BoardingPass pass = new BoardingPass("R45,S2");
+        passenger.setBoardingPass(pass);
+        plane.BoardPassenger(passenger);
         boolean isInPlane = (plane.getPassenger().contains(passenger));
         assertEquals(isInPlane, true);
     }

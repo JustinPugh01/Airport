@@ -12,7 +12,7 @@ public class Plane {
     public int getPlaneNumber(){
         return this.planenumber;
     }
-    public void checkInPassenger(Passenger passenger) {
+    public void BoardPassenger(Passenger passenger) {
         passengerlist.add(passenger);
     }
 

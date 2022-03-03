@@ -16,7 +16,7 @@ public class PassengerTests {
         Passenger passenger = new Passenger("Steve");
         Bag bag = new Bag(23);
         passenger.setPassengerBag(bag);
-        assertSame(passenger.CheckInBag(), bag);
+        assertSame(passenger.getPassengerBag(), bag);
     }
 
     @Test
@@ -24,7 +24,7 @@ public class PassengerTests {
         Passenger passenger = new Passenger("Steve");
         BoardingPass pass = new BoardingPass("R12,S5");
         passenger.setBoardingPass(pass);
-        assertSame(passenger.passengerCheckIn(), pass);
+        assertSame(passenger.getpassengerBoardingPass(), pass);
 
     }
 

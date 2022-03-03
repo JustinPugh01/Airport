@@ -17,5 +17,13 @@ public class Airport {
     public ArrayList<Plane> getPlanes() {
         return this.planelist;
     }
+    public void Airportcheckin(Plane plane,Passenger passenger,BoardingPass pass,Bag bag){
+        passenger.setBoardingPass(pass);
+        plane.BoardPassenger(passenger);
+        planelist.add(plane);
+        passenger.setPassengerBag(bag);
+    }
+    
     
 }
+

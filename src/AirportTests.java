@@ -19,7 +19,7 @@ public class AirportTests {
         
     }
     @Test
-    public void testAirportCheckIn(){
+    public void testAirportCheckIn()throws Exception{
         Airport airport = new Airport("Liverpool Airport");
         Plane plane = new Plane(561);
         Passenger passenger = new Passenger("George");

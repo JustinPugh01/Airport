@@ -12,7 +12,7 @@ public class PassengerTests {
     }
 
     @Test
-    public void testCheckinBag() {
+    public void testCheckinBag()throws Exception {
         Passenger passenger = new Passenger("Steve");
         Bag bag = new Bag(23);
         passenger.setPassengerBag(bag);

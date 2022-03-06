@@ -2,6 +2,7 @@ import java.util.ArrayList;
 
 public class Airport {
     private String airport;
+    private String cunt;
     private ArrayList<Plane> planelist = new ArrayList();
 
     public Airport(String airport){
